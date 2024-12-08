@@ -1,0 +1,9 @@
+{
+    "products": [
+      { "id": 1, "name": "М'яч", "basePrice": 10 },
+      { "id": 2, "name": "Кубики", "basePrice": 15 },
+      { "id": 3, "name": "Кукла", "basePrice": 20 }
+    ],
+    "history": []
+  }
+  
