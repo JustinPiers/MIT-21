@@ -1,6 +1,78 @@
+/* Глобальні змінні */
 :root {
-    --Color-text-text: #303030;
-    --Color-bg: #F1F1F1;
-    --Color-text-link-link: #0070F3;
-    --Height-table-row: 44px;
+    --color-bg: #F1F1F1;
+    --color-text: #303030;
+    --color-primary: #0070F3;
+    --color-success: #29845A;
+    --color-border: #E3E3E3;
+    --font-family: 'Roboto', sans-serif;
+}
+
+
+body {              /* Стили для body */
+    background-color: var(--color-bg);
+    font-family: var(--font-family);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+
+.container {       /* Центрування контейнера */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {          /* Стилі для header */
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+.header__title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+.card {             /* Стилі для секцій */
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+}
+.card.active {
+    border-color: var(--color-success);
+    background-color: var(--color-success);
+    color: #fff;
+}
+.card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.card__button {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+.card__button:hover {
+    background-color: darken(var(--color-primary), 10%);
+}
+
+
+.footer {           /* Стилі для footer */
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--color-border);
+}
+.footer__text {
+    font-size: 14px;
 }
