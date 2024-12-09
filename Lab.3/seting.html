@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Налаштування</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="settings.html">Налаштування</a></li>
+                <li><a href="formulas.html">Формули</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Налаштування</h1>
+        <form action="/submit-settings" method="post">
+            <label for="username">Ім'я користувача:</label>
+            <input type="text" id="username" name="username" placeholder="Введіть ім'я">
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+            
+            <button id="settingsBtn">Настройки</button>
+
+<script>
+  document.getElementById('settingsBtn').addEventListener('click', function() {
+    window.location.href = 'settings.html';
+  });
+</script>
+
+        </form>
+    </main>
+</body>
+</html>
